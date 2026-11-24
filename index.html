@@ -12,7 +12,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Gestión de riesgos</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Medir y controlar los riesgos de una institución financiera: riesgo de mercado con VaR y *expected shortfall*, crédito con PD, LGD, EAD y *scoring*, liquidez con LCR y NSFR, tasas y cambio en el balance, riesgo operacional, capital de Basilea y pruebas de estrés.">
+<meta name="description" content="Medir y controlar los riesgos de una institución financiera y la plataforma que lo hace posible: datos de riesgo y BCBS 239, motores de VaR y *expected shortfall*, crédito con PD, LGD, EAD, *scoring* y NIIF 9, límites y alertas en tiempo real, aprendizaje automático y su validación, liquidez, tasas y cambio, riesgo operacional, tecnológico y ciber, capital de Basilea, pruebas de estrés y reportes regulatorios automatizados.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
@@ -31,16 +31,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <header class="hero">
   <span class="eyebrow">Curso visual e interactivo · Industrias y finanzas</span>
-  <h1>Cuánto puede perder un banco en un mal día, en un mal año y en una crisis, y cuánto capital necesita para seguir abierto</h1>
-  <p class="lede">Un banco vive de tomar riesgos: presta, invierte, cambia monedas y transforma depósitos de corto plazo en créditos de largo plazo. Lo que lo separa de la quiebra es saber cuánto puede perder y tener con qué cubrirlo. Este curso construye esas medidas una por una, con sus fórmulas, sus supuestos y la forma en que fallaron en 2008, en Barings o en la corrida de un banco en 2023.</p>
+  <h1>Cuánto puede perder un banco en un mal día, en un mal año y en una crisis, y los sistemas que lo calculan antes de que pase</h1>
+  <p class="lede">Un banco vive de tomar riesgos: presta, invierte, cambia monedas y transforma depósitos de corto plazo en créditos de largo plazo. Lo que lo separa de la quiebra es saber cuánto puede perder y tener con qué cubrirlo, y hoy eso lo sabe una plataforma: datos que llegan de cada sistema, motores que calculan cada noche y en el día, límites que avisan en segundos y reportes que salen solos hacia el supervisor. Este curso construye cada medida con su fórmula y muestra el sistema que la calcula, los datos que necesita y cómo falló en 2008, en Barings, en Knight Capital o en la corrida de un banco en 2023.</p>
 </header>
 
 <section>
   <h2>Cómo usar este curso</h2>
   <div class="prose">
-    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 14 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
-    <p><b>Para quién es.</b> Estudiantes universitarios y profesionales de finanzas, riesgos, auditoría o datos. Conviene saber probabilidad y estadística básicas (distribución normal, percentiles, correlación) y el valor del dinero en el tiempo. Los instrumentos (bonos, acciones, derivados) y su valoración están en Inversiones; la volatilidad con GARCH, la simulación de Monte Carlo y los modelos de tasas, en Finanzas cuantitativas; y cómo vive el riesgo en la operación diaria de un banco, en Cómo funciona un banco.</p>
-    <p><b>Cómo está hecho.</b> Un banco mediano ficticio de la región recorre el curso: tiene una cartera de inversiones, una cartera de créditos de consumo y de empresas, depósitos a la vista y a plazo, y posiciones en divisas. Cada capítulo mide un riesgo de ese mismo banco y al final se juntan en su capital y en su prueba de estrés. Los laboratorios corren en la página con datos simulados o históricos públicos: mueves el nivel de confianza, la correlación o el escenario y ves cambiar la pérdida y el capital. Los casos públicos (2008, LTCM, Barings, Northern Rock, Knight Capital, la corrida de 2023) aparecen donde enseñan algo.</p>
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 19 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Estudiantes universitarios y profesionales de finanzas, riesgos, auditoría, datos o tecnología que construyen o mantienen sistemas de riesgos. Conviene saber probabilidad y estadística básicas (distribución normal, percentiles, correlación), el valor del dinero en el tiempo y un poco de Python o de hoja de cálculo. Los instrumentos y su valoración están en Inversiones; GARCH, Monte Carlo, los modelos de tasas y la arquitectura de un motor de valoración, en Finanzas cuantitativas; la detección de fraude y la operación diaria del banco, en Cómo funciona un banco; y la seguridad de los sistemas a fondo, en Seguridad informática.</p>
+    <p><b>Cómo está hecho.</b> Un banco mediano ficticio de la región recorre el curso: tiene una cartera de inversiones, créditos de consumo y de empresas, depósitos a la vista y a plazo, y posiciones en divisas. En la primera parte se dibuja su plataforma de riesgos, de los sistemas fuente al tablero del directorio, y cada capítulo siguiente le agrega una pieza: el motor de VaR, el de provisiones, el motor de decisión de crédito, el monitor de límites, el registro de pérdidas operacionales y el reporte al supervisor. Al final todo se junta en su capital y su prueba de estrés. Los laboratorios corren en la página con datos simulados o históricos públicos: mueves el nivel de confianza, la correlación, el escenario o un dato roto y ves cambiar la pérdida, el capital o la alerta. Las prácticas usan Python, R u hojas de cálculo con datos públicos. Las plataformas comerciales aparecen solo como ejemplos del mercado, y los casos públicos (2008, LTCM, Barings, Northern Rock, Knight Capital, la corrida de 2023) donde enseñan algo.</p>
   </div>
 </section>
 
@@ -50,42 +50,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </details>
 
-<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> El oficio del riesgo</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
+<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> El oficio y la plataforma de riesgos</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
   <div class="mods">
-    <div class="mod soon" data-id="que-es-gestionar-riesgos"><span class="n">01</span><b>Qué es gestionar riesgos en una institución financiera</b><p>Los tipos de riesgo, el apetito de riesgo, las tres líneas de defensa y lo que pasa cuando nadie mira.</p></div>
-    <div class="mod soon" data-id="medir-perdidas"><span class="n">02</span><b>Rendimientos, volatilidad y colas: el lenguaje de las pérdidas</b><p>De los precios a la distribución de pérdidas, y por qué la normal promete menos desastres de los que ocurren.</p></div>
+    <div class="mod soon" data-id="que-es-gestionar-riesgos"><span class="n">01</span><b>Qué es gestionar riesgos en una institución financiera</b><p>Los tipos de riesgo, el apetito de riesgo, las tres líneas de defensa y el lenguaje de las pérdidas.</p></div>
+    <div class="mod soon" data-id="la-plataforma-de-riesgos"><span class="n">02</span><b>La plataforma de riesgos: de los sistemas fuente al tablero</b><p>El mapa tecnológico de la gestión de riesgos: de dónde salen los datos, qué motores calculan, dónde se guardan los resultados y cómo llegan a quien decide.</p></div>
+    <div class="mod soon" data-id="datos-de-riesgo-y-bcbs-239"><span class="n">03</span><b>Datos de riesgo: agregación, calidad y BCBS 239</b><p>Los principios que el supervisor exige para que un banco pueda sumar su riesgo rápido y bien, y la ingeniería de datos que los cumple.</p></div>
   </div>
 </details>
 
-<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> Riesgo de mercado</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
+<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> Riesgo de mercado y límites en tiempo real</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
   <div class="mods">
-    <div class="mod soon" data-id="valor-en-riesgo"><span class="n">03</span><b>Valor en riesgo: paramétrico, histórico y Monte Carlo</b><p>La pérdida que no se supera con un nivel de confianza en un horizonte, calculada de tres maneras.</p></div>
-    <div class="mod soon" data-id="expected-shortfall-y-backtesting"><span class="n">04</span><b>*Expected shortfall* y *backtesting*: medir la cola y comprobar el modelo</b><p>La pérdida promedio en los peores días, y las pruebas que dicen si un modelo de riesgo merece confianza.</p></div>
-    <div class="mod soon" data-id="sensibilidades-y-escenarios"><span class="n">05</span><b>Sensibilidades, opciones y escenarios en la cartera de negociación</b><p>Cuando la cartera tiene opciones o bonos largos, la aproximación lineal falla: griegas, convexidad y revaluación por escenarios.</p></div>
+    <div class="mod soon" data-id="medir-perdidas"><span class="n">04</span><b>Rendimientos, volatilidad y colas: el lenguaje de las pérdidas</b><p>De los precios a la distribución de pérdidas, y por qué la normal promete menos desastres de los que ocurren.</p></div>
+    <div class="mod soon" data-id="valor-en-riesgo"><span class="n">05</span><b>Valor en riesgo: paramétrico, histórico y Monte Carlo</b><p>La pérdida que no se supera con un nivel de confianza en un horizonte, calculada de tres maneras.</p></div>
+    <div class="mod soon" data-id="expected-shortfall-y-backtesting"><span class="n">06</span><b>*Expected shortfall* y *backtesting*: medir la cola y comprobar el modelo</b><p>La pérdida promedio en los peores días, y las pruebas automáticas que dicen cada día si un modelo de riesgo merece confianza.</p></div>
+    <div class="mod soon" data-id="motor-de-riesgo-de-mercado"><span class="n">07</span><b>El motor de riesgo de mercado: sensibilidades, escenarios y revaluación</b><p>Cómo se calcula el riesgo de una cartera con opciones y bonos: griegas, escenarios de la curva y la revaluación masiva que hace un motor cada noche.</p></div>
+    <div class="mod soon" data-id="limites-y-alertas-en-tiempo-real"><span class="n">08</span><b>Límites y alertas en tiempo real</b><p>Del límite escrito en una política al sistema que lo vigila en segundos: controles previos a la operación, monitoreo intradía y escalamiento.</p></div>
   </div>
 </details>
 
-<details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> Riesgo de crédito</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
+<details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> Riesgo de crédito y modelos</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
   <div class="mods">
-    <div class="mod soon" data-id="perdida-esperada"><span class="n">06</span><b>PD, LGD, EAD y la pérdida esperada</b><p>Los tres parámetros del riesgo de crédito y cómo se combinan en la provisión que el banco reserva cada mes.</p></div>
-    <div class="mod soon" data-id="scoring-de-credito"><span class="n">07</span><b>*Scoring* de crédito: decidir a quién prestar</b><p>Del formulario a la puntuación: variables, regresión logística, punto de corte y cómo se valida un modelo de *scoring*.</p></div>
-    <div class="mod soon" data-id="riesgo-de-cartera-y-contraparte"><span class="n">08</span><b>Pérdida inesperada, concentración y riesgo de contraparte</b><p>Por qué el capital de crédito depende de la correlación entre deudores, y qué cambia cuando el deudor es la contraparte de un derivado.</p></div>
+    <div class="mod soon" data-id="perdida-esperada"><span class="n">09</span><b>PD, LGD, EAD, pérdida esperada y el motor de provisiones</b><p>Los tres parámetros del riesgo de crédito, cómo se combinan en la provisión que el banco reserva cada mes y el sistema que la calcula crédito por crédito.</p></div>
+    <div class="mod soon" data-id="scoring-y-motor-de-decision"><span class="n">10</span><b>*Scoring* de crédito y el motor de decisión</b><p>Del formulario a la respuesta en segundos: variables, regresión logística, punto de corte y el sistema que decide en línea.</p></div>
+    <div class="mod soon" data-id="riesgo-de-cartera-y-contraparte"><span class="n">11</span><b>Pérdida inesperada, concentración y riesgo de contraparte</b><p>Por qué el capital de crédito depende de la correlación entre deudores, y qué cambia cuando el deudor es la contraparte de un derivado.</p></div>
+    <div class="mod soon" data-id="modelos-de-aprendizaje-automatico-y-riesgo-de-modelo"><span class="n">12</span><b>Modelos de aprendizaje automático, su validación y el riesgo de modelo</b><p>Árboles potenciados, redes y modelos que aprenden solos en crédito y fraude, y el gobierno que exige cualquier modelo: inventario, validación independiente y monitoreo.</p></div>
   </div>
 </details>
 
 <details class="stage" id="parte-4" open><summary><h2><span class="pn">Parte 4</span> El balance: liquidez, tasas y cambio</h2><span class="cuenta" data-etapa-cuenta="4"></span></summary>
   <div class="mods">
-    <div class="mod soon" data-id="riesgo-de-liquidez"><span class="n">09</span><b>Riesgo de liquidez: brechas, LCR y NSFR</b><p>Un banco solvente puede quebrar en una semana si no tiene efectivo: cómo se mide y se previene.</p></div>
-    <div class="mod soon" data-id="tasas-y-cambio-en-el-balance"><span class="n">10</span><b>Riesgo de tasa de interés en el balance y riesgo cambiario</b><p>Cómo una subida de tasas o una devaluación golpea el margen y el patrimonio del banco, aunque no opere en la mesa.</p></div>
+    <div class="mod soon" data-id="riesgo-de-liquidez"><span class="n">13</span><b>Riesgo de liquidez: brechas, LCR, NSFR y liquidez intradía</b><p>Un banco solvente puede quebrar en una semana, o en un día si los depósitos se van por una aplicación: cómo se mide y se vigila.</p></div>
+    <div class="mod soon" data-id="tasas-y-cambio-en-el-balance"><span class="n">14</span><b>Riesgo de tasa de interés en el balance y riesgo cambiario</b><p>Cómo una subida de tasas o una devaluación golpea el margen y el patrimonio del banco, y cómo lo simula un sistema de ALM.</p></div>
   </div>
 </details>
 
-<details class="stage" id="parte-5" open><summary><h2><span class="pn">Parte 5</span> Operacional, capital y estrés</h2><span class="cuenta" data-etapa-cuenta="5"></span></summary>
+<details class="stage" id="parte-5" open><summary><h2><span class="pn">Parte 5</span> Riesgo operacional, tecnológico y ciber</h2><span class="cuenta" data-etapa-cuenta="5"></span></summary>
   <div class="mods">
-    <div class="mod soon" data-id="riesgo-operacional"><span class="n">11</span><b>Riesgo operacional: personas, procesos, sistemas y eventos externos</b><p>Fraudes, errores, caídas de sistemas y desastres: cómo se registran, se miden y se controlan.</p></div>
-    <div class="mod soon" data-id="basilea-y-capital"><span class="n">12</span><b>Basilea y el capital regulatorio</b><p>Activos ponderados por riesgo, ratios de capital, colchones y apalancamiento: el número que dice si el banco puede seguir operando.</p></div>
-    <div class="mod soon" data-id="pruebas-de-estres"><span class="n">13</span><b>Pruebas de estrés y escenarios</b><p>Qué le pasa al banco en una recesión severa, y qué escenario lo quebraría.</p></div>
-    <div class="mod soon" data-id="riesgo-de-modelo-y-gobierno"><span class="n">14</span><b>Riesgo de modelo, gobierno y reporte de riesgos</b><p>Los modelos también fallan: cómo se validan, cómo se reporta el riesgo al directorio y qué hace una buena cultura de riesgos.</p></div>
+    <div class="mod soon" data-id="riesgo-operacional"><span class="n">15</span><b>Riesgo operacional: personas, procesos, sistemas y eventos externos</b><p>Fraudes, errores, caídas y desastres: cómo se registran en una plataforma de riesgo y cumplimiento, se miden y se controlan.</p></div>
+    <div class="mod soon" data-id="riesgo-tecnologico-y-ciber"><span class="n">16</span><b>Riesgo tecnológico, ciberriesgo y resiliencia operacional</b><p>Caídas de sistemas, ataques, proveedores de nube y cambios mal hechos como riesgo operacional: cómo se identifican, se cuantifican y se recuperan.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-6" open><summary><h2><span class="pn">Parte 6</span> Capital, estrés y reporte regulatorio</h2><span class="cuenta" data-etapa-cuenta="6"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="basilea-y-capital"><span class="n">17</span><b>Basilea y el capital regulatorio</b><p>Activos ponderados por riesgo, ratios de capital, colchones y apalancamiento: el número que dice si el banco puede seguir operando, y el cálculo que lo produce.</p></div>
+    <div class="mod soon" data-id="pruebas-de-estres"><span class="n">18</span><b>Pruebas de estrés y escenarios</b><p>Qué le pasa al banco en una recesión severa, qué escenario lo quebraría y cómo se encadenan los modelos para responderlo.</p></div>
+    <div class="mod soon" data-id="regtech-y-reporte-de-riesgos"><span class="n">19</span><b>*Regtech*, reportes regulatorios automatizados y el tablero del directorio</b><p>Cómo sale el riesgo del banco hacia el supervisor y el directorio: formatos, taxonomías, automatización, controles, comités y cultura de riesgos.</p></div>
   </div>
 </details>
 
