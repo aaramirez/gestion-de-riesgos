@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KX76XF8R');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gestión de riesgos</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Medir y controlar los riesgos de una institución financiera: riesgo de mercado con VaR y *expected shortfall*, crédito con PD, LGD, EAD y *scoring*, liquidez con LCR y NSFR, tasas y cambio en el balance, riesgo operacional, capital de Basilea y pruebas de estrés.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX76XF8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrap" data-page="index">
+<header class="topbar"><a class="brand" href="index.html">Gestión de <b>riesgos</b></a><span class="eyebrow">Curso visual e interactivo · Industrias y finanzas</span><a class="al-sitio" href="https://aaramirez.github.io/">← Todos los cursos</a></header>
+<div class="layout">
+<nav class="toc" id="toc" aria-label="Ruta de aprendizaje"></nav>
+<main>
+
+<header class="hero">
+  <span class="eyebrow">Curso visual e interactivo · Industrias y finanzas</span>
+  <h1>Cuánto puede perder un banco en un mal día, en un mal año y en una crisis, y cuánto capital necesita para seguir abierto</h1>
+  <p class="lede">Un banco vive de tomar riesgos: presta, invierte, cambia monedas y transforma depósitos de corto plazo en créditos de largo plazo. Lo que lo separa de la quiebra es saber cuánto puede perder y tener con qué cubrirlo. Este curso construye esas medidas una por una, con sus fórmulas, sus supuestos y la forma en que fallaron en 2008, en Barings o en la corrida de un banco en 2023.</p>
+</header>
+
+<section>
+  <h2>Cómo usar este curso</h2>
+  <div class="prose">
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 14 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Estudiantes universitarios y profesionales de finanzas, riesgos, auditoría o datos. Conviene saber probabilidad y estadística básicas (distribución normal, percentiles, correlación) y el valor del dinero en el tiempo. Los instrumentos (bonos, acciones, derivados) y su valoración están en Inversiones; la volatilidad con GARCH, la simulación de Monte Carlo y los modelos de tasas, en Finanzas cuantitativas; y cómo vive el riesgo en la operación diaria de un banco, en Cómo funciona un banco.</p>
+    <p><b>Cómo está hecho.</b> Un banco mediano ficticio de la región recorre el curso: tiene una cartera de inversiones, una cartera de créditos de consumo y de empresas, depósitos a la vista y a plazo, y posiciones en divisas. Cada capítulo mide un riesgo de ese mismo banco y al final se juntan en su capital y en su prueba de estrés. Los laboratorios corren en la página con datos simulados o históricos públicos: mueves el nivel de confianza, la correlación o el escenario y ves cambiar la pérdida y el capital. Los casos públicos (2008, LTCM, Barings, Northern Rock, Knight Capital, la corrida de 2023) aparecen donde enseñan algo.</p>
+  </div>
+</section>
+
+<details class="stage" id="temario" open><summary><h2><span class="pn">Empieza aquí</span> Tabla de contenido</h2></summary>
+  <div class="mods">
+    <a class="mod" href="temario.html"><span class="n">≡</span><b>Tabla de contenido</b><p>Cada capítulo con sus secciones y sus laboratorios.</p></a>
+  </div>
+</details>
+
+<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> El oficio del riesgo</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="que-es-gestionar-riesgos"><span class="n">01</span><b>Qué es gestionar riesgos en una institución financiera</b><p>Los tipos de riesgo, el apetito de riesgo, las tres líneas de defensa y lo que pasa cuando nadie mira.</p></div>
+    <div class="mod soon" data-id="medir-perdidas"><span class="n">02</span><b>Rendimientos, volatilidad y colas: el lenguaje de las pérdidas</b><p>De los precios a la distribución de pérdidas, y por qué la normal promete menos desastres de los que ocurren.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> Riesgo de mercado</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="valor-en-riesgo"><span class="n">03</span><b>Valor en riesgo: paramétrico, histórico y Monte Carlo</b><p>La pérdida que no se supera con un nivel de confianza en un horizonte, calculada de tres maneras.</p></div>
+    <div class="mod soon" data-id="expected-shortfall-y-backtesting"><span class="n">04</span><b>*Expected shortfall* y *backtesting*: medir la cola y comprobar el modelo</b><p>La pérdida promedio en los peores días, y las pruebas que dicen si un modelo de riesgo merece confianza.</p></div>
+    <div class="mod soon" data-id="sensibilidades-y-escenarios"><span class="n">05</span><b>Sensibilidades, opciones y escenarios en la cartera de negociación</b><p>Cuando la cartera tiene opciones o bonos largos, la aproximación lineal falla: griegas, convexidad y revaluación por escenarios.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> Riesgo de crédito</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="perdida-esperada"><span class="n">06</span><b>PD, LGD, EAD y la pérdida esperada</b><p>Los tres parámetros del riesgo de crédito y cómo se combinan en la provisión que el banco reserva cada mes.</p></div>
+    <div class="mod soon" data-id="scoring-de-credito"><span class="n">07</span><b>*Scoring* de crédito: decidir a quién prestar</b><p>Del formulario a la puntuación: variables, regresión logística, punto de corte y cómo se valida un modelo de *scoring*.</p></div>
+    <div class="mod soon" data-id="riesgo-de-cartera-y-contraparte"><span class="n">08</span><b>Pérdida inesperada, concentración y riesgo de contraparte</b><p>Por qué el capital de crédito depende de la correlación entre deudores, y qué cambia cuando el deudor es la contraparte de un derivado.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-4" open><summary><h2><span class="pn">Parte 4</span> El balance: liquidez, tasas y cambio</h2><span class="cuenta" data-etapa-cuenta="4"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="riesgo-de-liquidez"><span class="n">09</span><b>Riesgo de liquidez: brechas, LCR y NSFR</b><p>Un banco solvente puede quebrar en una semana si no tiene efectivo: cómo se mide y se previene.</p></div>
+    <div class="mod soon" data-id="tasas-y-cambio-en-el-balance"><span class="n">10</span><b>Riesgo de tasa de interés en el balance y riesgo cambiario</b><p>Cómo una subida de tasas o una devaluación golpea el margen y el patrimonio del banco, aunque no opere en la mesa.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-5" open><summary><h2><span class="pn">Parte 5</span> Operacional, capital y estrés</h2><span class="cuenta" data-etapa-cuenta="5"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="riesgo-operacional"><span class="n">11</span><b>Riesgo operacional: personas, procesos, sistemas y eventos externos</b><p>Fraudes, errores, caídas de sistemas y desastres: cómo se registran, se miden y se controlan.</p></div>
+    <div class="mod soon" data-id="basilea-y-capital"><span class="n">12</span><b>Basilea y el capital regulatorio</b><p>Activos ponderados por riesgo, ratios de capital, colchones y apalancamiento: el número que dice si el banco puede seguir operando.</p></div>
+    <div class="mod soon" data-id="pruebas-de-estres"><span class="n">13</span><b>Pruebas de estrés y escenarios</b><p>Qué le pasa al banco en una recesión severa, y qué escenario lo quebraría.</p></div>
+    <div class="mod soon" data-id="riesgo-de-modelo-y-gobierno"><span class="n">14</span><b>Riesgo de modelo, gobierno y reporte de riesgos</b><p>Los modelos también fallan: cómo se validan, cómo se reporta el riesgo al directorio y qué hace una buena cultura de riesgos.</p></div>
+  </div>
+</details>
+
+
+
+<nav class="pager" id="pager" aria-label="Capítulo anterior y siguiente"></nav>
+</main>
+</div>
+<footer><span>Curso abierto de aaramirez.github.io.</span><span>Sitio publicado: <a href="https://github.com/aaramirez/gestion-de-riesgos" target="_blank" rel="noopener">github.com/aaramirez/gestion-de-riesgos</a></span></footer>
+</div>
+<script src="assets/lab.js"></script>
+</body>
+</html>
